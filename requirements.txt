@@ -3,4 +3,4 @@ pandas
 nltk
 joblib
 Streamlit
-sklearn
+scikit-learn
