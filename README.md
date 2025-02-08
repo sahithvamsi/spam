@@ -1,8 +1,56 @@
-# NLP-Spam-Classifier
+# Spam Classification using Machine Learning
 
-The SMS Spam Collection is a set of SMS tagged messages that have been collected for SMS Spam research. It contains one set of SMS messages in English of 5,574 messages, tagged acording being ham (legitimate) or spam. This python project of detecting Spam messages deals with spam and ham messages. Using sklearn, we build a TfidfVectorizer on our dataset. Then, we initialize a Naive bayes classifier and fit the model. <br>
+## 📌 Project Overview
+This project aims to classify messages as **Spam or Ham** using Natural Language Processing (NLP) and Machine Learning techniques. The model is trained on a dataset of SMS messages and deployed using **Streamlit**.
 
-We took a [dataset](https://archive.ics.uci.edu/ml/index.php), implemented a TfidfVectorizer, initialized a Naive bayes classifier, and fit our model.
-So with this model, we have 955 true positives, 129 true negatives, 0 false positives, and 31 false negatives.We ended up obtaining an accuracy of 97% in magnitude.
+## 🚀 Live Demo
+[Click here to use the Spam Classification app](https://aqu2udi8w7zy8hhoorxdzp.streamlit.app/)
 
-Credits: Dataset has bee taken from UCI Machine Learning Repository.Thanks to Krish Naik for the steps and guidance for this beginner NLP model.
+## 📂 Project Structure
+```
+├── dataset/                # Dataset containing spam and ham messages
+├── models/                 # Trained ML models
+├── notebooks/              # Jupyter notebooks for EDA and model training
+├── app.py                  # Streamlit app script
+├── requirements.txt        # Required dependencies
+└── README.md               # Project documentation
+```
+
+## 🔍 Features
+- **Text Preprocessing**: Tokenization, Lemmatization, Stopword Removal
+- **TF-IDF Vectorization** for feature extraction
+- **ML Models**: Logistic Regression, Naïve Bayes, SVM
+- **Real-time Prediction** using a deployed Streamlit app
+
+## 🛠️ Installation & Usage
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/sahithvamsi/spam-classification.git
+   cd spam-classification
+   ```
+2. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Run the Streamlit app:
+   ```sh
+   streamlit run app.py
+   ```
+
+## 🧪 Model Performance
+| Model             | Accuracy |
+|------------------|----------|
+| Logistic Regression | 98.3% |
+| Naïve Bayes       | 96.8% |
+| SVM              | 97.5% |
+
+## 📜 License
+This project is open-source and available under the **MIT License**.
+
+## 🤝 Contributing
+Feel free to submit issues or contribute to improving this project!
+
+## 👨‍💻 Author
+Developed by **Sahith Vamsi Gandrala**  
+GitHub: [sahithvamsi](https://github.com/sahithvamsi)  
+LinkedIn: [Sahith Vamsi Gandrala](https://www.linkedin.com/in/sahith-vamsi-gandrala-ab981a179/)
